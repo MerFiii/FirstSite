@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes appear5{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.25;
+    }
+}
+@keyframes appear2{
+    from{
+        opacity: 0;
+        letter-spacing: 10px;
+    }
+    to{
+        opacity: 1;
+        letter-spacing: 100%;
+    }
+}
+@keyframes appear3{
+    0% { opacity: 0}
+    25% {opacity: 0}
+    50% {opacity: 0}
+    75% {opacity: 0.5}
+    100% {opacity: 1}
+}
+@keyframes appear4{
+    0% { opacity: 0}
+    100% {opacity: 0.8}
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+}
+.backgr{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), #3551b5), url("background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#godzina{
+    font-size: 21px;
+    position: absolute;
+    width: 155px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 20%;
+    background: transparent;
+    border-radius: 10px;
+    text-align: center;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.25);
+}
+
+.menu{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
+    z-index: 100;
+}
+
+.menu a{
+    margin: 0 1rem;
+    text-decoration: none;
+    padding: 1rem .5rem;
+}
+.menuhover:hover{
+    background-color: rgba(144, 179, 238, 0.169);
+    border-radius: 14px;
+    transition-duration: 0.5s;
+}
+.title h1 {
+    font-size: 150%;
+    text-align: center;
+}
+.title{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    font-size: 30px;
+    height: 30px
+}
+
+.sub{
+    position: fixed;
+    bottom: -10px;
+    right: -10px;
+    width: 13%;
+    padding: 0;
+    background-color: #1F2232;
+    text-align: right;
+    font-size: 13px;
+    opacity: 0.95;
+    height: 60px;
+    border-radius: 15px;
+    text-align: center;
+    opacity: 0.8;
+    background-image: linear-gradient(to right, #073a9aad , #5e69e95a);
+    animation-name: appear4;
+    animation-duration: 2s;
+}
+
+.sub h3{
+    color: rgba(255, 255, 255, 0.309);
+    margin-top: 15px;
+}
+.title2{
+    animation-name: appear2;
+    animation-duration: 3s;
+    margin-top: 7%;
+    font-size: 110%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:'Nunito', sans-serif;
+}
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+    font-weight: lighter;
+}
+form{
+    width: 90%;
+    max-width: 600px;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+}
+button{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+}
+.optional{
+    opacity: 0.7;
+    font-weight: lighter;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .input-group{
+    flex-basis: 48%;
+
+}
+.menu0{
+    background-color:rgba(62, 61, 61, 0);
+    height: 28%;
+    position: fixed;
+    width: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    font-size: 22px;
+    line-height: 270%;
+    border-radius: 40px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.397);
+    font-weight: bold;
+    text-align: center;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+.webdev{
+    opacity: 0.5;
+    font-size: 80%;
+    position: relative;
+    top: 22%;
+}
+.return{
+    animation-name: appear5;
+    animation-duration: 2s;
+    opacity: 0.25;
+}
+
+

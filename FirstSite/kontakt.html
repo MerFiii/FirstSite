@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> FirstSite - Kontakt</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <script src="https://kit.fontawesome.com/2cee2f519b.js" crossorigin="anonymous"></script>
+    <style>
+        .backgr{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15%;
+        }
+        .input-group{
+            animation-name: appear;
+            animation-duration: 2s;
+        }
+        button{
+            animation-name: appear3;
+            animation-duration: 1.5s;
+            transition-duration: 2s;
+        }
+        .backgr form button:hover{
+            background-color: rgba(71, 135, 245, 0.421)
+        }
+        .backgr p{
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.45);
+            width: auto;
+            max-width: 600px;
+            background-image: linear-gradient(to right, #3551b500 , #ffffff00);
+            padding: 1rem;
+            transform: translate(-50%, -50%);
+            font-size: 110%;
+            text-align: center;
+            animation-name:appear;
+            animation-duration: 2s
+        }
+       
+    </style>
+</head>
+
+<body>
+<div class="backgr">
+    <form>
+        <div class="row">
+            <div class="input-group">
+                <input type="text" id="name" required>
+                <label for="name"><i class="bi bi-person" style="position: relative; top: -13%"></i> Imię i nazwisko</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="number" required>
+                <label for="number"><i class="bi bi-telephone" style="position: relative; top: -13%"></i> Numer telefonu</label>
+            </div>
+        </div>
+        
+        <div class="input-group">
+            <input type="email" id="email" required>
+            <label for="email"><i class="bi bi-envelope"  style="position: relative; top: -13%"></i> E-mail</label>
+        </div>
+        <div class="input-group">
+            <textarea id="message" rows="8" required></textarea>
+            <label for="message"><i class="bi bi-chat-left"  style="position: relative; top: -1%"></i> Twoja wiadomość</label>
+        </div>
+        <button type="submit"><span></span>Wyślij wiadomość</button>
+    </form>
+    <p> Skontaktuj się ze mną za pomocą krótkiego formularza poniżej, odpowiedź uzyskasz na podany przez siebie adres E-mail.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="menu">
+    <div id="godzina"></div>
+     <div class="title"><h1><a href="index.html">FirstSite</a></h1></div>
+     <div class="dropdown">
+         <a href="index.html" class="return">Powrót</a>
+         <a href="prace.html" class="menuhover">Moje prace</a>
+     </div>
+     
+     <a href="info.html" class="menuhover">O mnie</a>
+     <a href="kontakt.html" class="menuhover">Kontakt</a>
+ </nav>
+
+
+
+
+
+
+
+
+<div class="sub">
+    <h3>  &copy Kacper Sobota </h3>
+</div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> FirstSite</title>
+    <link rel="stylesheet" href="styl.css">
+    <style>
+        
+        #info{
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.45);
+            width: auto;
+            max-width: 700px;
+            background-image: linear-gradient(to right, #3551b569 , #ffffff00);
+            padding: 1rem;
+            transform: translate(-50%, -50%);
+        }
+        #info p{
+            margin-left: 5%;
+            margin-right: 5%
+        }
+        #info2{
+            position: absolute;
+            top: 63%;
+            left: 50%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.45);
+            width: auto;
+            max-width: 700px;
+            background-image: linear-gradient(to left, #3551b569 , #ffffff00);
+            padding: 1rem;
+            transform: translate(-50%, -50%);
+        }
+        #info2 p{
+            margin-left: 5%;
+            margin-right: 5%
+        }
+        #info, #info2{
+            animation-name: appear;
+            animation-duration: 2s;
+        }
+        #info h1, #info2 h1{
+            font-size: 180%;
+            line-height: 200%;
+        }
+        p{
+            font-weight: lighter;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="backgr"></div>
+
+<nav class="menu">
+   <div id="godzina"></div>
+    <div class="title"><h1><a href="index.html">FirstSite</a></h1></div>
+    <div class="dropdown">
+        <a href="index.html" class="return">Powrót</a>
+        <a href="prace.html" class="menuhover">Moje prace</a>
+    </div>
+    
+    <a href="info.html" class="menuhover">O mnie</a>
+    <a href="kontakt.html" class="menuhover">Kontakt</a>
+</nav>
+
+<div id="info">
+    <h1> &nbsp&nbsp&nbsp&nbspTrochę o mnie</h1>
+    <p> 
+        Cześć! Jestem Kacper, uczę się w technikum na kierunku informatycznym. Programowaniem stron internetowych
+        interesuję się od około 3 miesięcy i od tego czasu staram się poszerzać swoją wiedzę w tym zakresie. 
+    </p>
+
+</div>
+
+<div id="info2">
+    <h1> &nbsp&nbsp&nbsp&nbspJak zacząłem?</h1>
+    <p>  Moja przygoda z programowaniem stron internetowych zaczęła się na początku 3 klasy technikum, kiedy po wakacjach wróciłem do szkoły i doszedł
+         mi nowy przedmiot, tj. Tworzenie Stron Internetowych. Już na samym początku spodobało mi się to, iż każde moje działanie powoduje, że na ekranie
+         natychmiast pojawiają się efekty mojej pracy. W tworzeniu stron internetowych lubię też to, że kiedy tylko zechcę mogę odświeżyć tworzoną 
+         przeze mnie stronę i sprawdzić progres swojej pracy. Według mnie jest to bardzo motywujące do dalszej nauki i udoskonalania swojego kodu. 
+    </p>
+
+</div>
+
+<div class="sub">
+    <h3>  &copy Kacper Sobota </h3>
+</div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

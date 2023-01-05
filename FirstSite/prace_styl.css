@@ -1,0 +1,67 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+.backgr{
+    size: cover;
+}
+.backgr .container{
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    height: 500px;
+    width: 80%;
+    margin-left: 10%;
+}
+.backgr .container div{
+    margin-top: 200px;
+    width: 300px;
+}
+.box1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.323), #3551b5aa);
+    border-radius: 20px;
+    text-align: center;
+    padding: 0.9rem;
+    animation-name: appear;
+    animation-duration: 2s;
+}
+.box2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.323), #3551b5aa);
+    border-radius: 20px;
+    text-align: center;
+    padding: 0.9rem;
+    animation-name: appear;
+    animation-duration: 2s;
+}
+.box3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.323), #3551b536);
+    border-radius: 20px;
+    text-align: center;
+    padding: 0.9rem;
+    animation-name: appear;
+    animation-duration: 2s;
+}
+.backgr h1{
+    font-size: 160%;
+}
+.backgr p{
+    opacity: 0.8;
+    padding: 1.3rem;
+    font-weight: lighter;
+}
+.backgr i{
+    position: relative;
+    bottom: 7%;
+    border-radius: 10px;
+    width: 100%;
+    opacity: 0.8;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    display: inline-block;
+}
+.backgr i:hover{
+    background-color: rgba(151, 194, 243, 0.3);
+}
+
+
